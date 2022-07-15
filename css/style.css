@@ -1,0 +1,142 @@
+:root {
+  --gray: #BCBEC0;
+  --blue-dark: #052555;
+  --brown: brown;
+  --blue-light: #F2F8FD;
+  --blue: #BDCCFF;
+  --white: #fff;
+
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.ttf') format('ttf');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Montserrat', serif;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.main {
+  margin: 0 auto;
+  width: 600px;
+
+  background: linear-gradient(121.32deg, #FFFFFF 10.96%, #FFFFFF 72%, #FFFFFF 99.98%);
+  box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 29px;
+}
+
+.container {
+  padding: 30px;
+}
+
+.header {
+  border-bottom: 1px solid var(--gray);
+  margin-bottom: 30px;
+}
+
+.title {
+  margin-bottom: 10px;
+  color: var(--blue-dark);
+}
+
+.header .title {
+  /* color: var(--blue-dark); */
+}
+
+.header p {
+  color: var(--gray);
+  padding-bottom: 30px;
+}
+
+.form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo__title {
+  /* color: var(--blue-dark); */
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.task .content .text {
+  min-width: 350px;
+  width: 100%;
+  display: block;
+
+  font-size: 16px;
+}
+
+.task .content .text:not(:read-only) {
+  color: var(--gray);
+}
+
+.task .actions {
+  margin: 0 -0.5rem;
+}
+
+.task .actions button {
+  margin: 0 0.5rem;
+  font-weight: 700;
+}
+
+.task .actions .edit {
+  color: var(--blue-dark);
+  text-transform: uppercase;
+}
+
+.task .actions .delete {
+  color: var(--brown);
+  text-transform: uppercase;
+}
+
+.input {
+  padding: 1rem;
+  background: var(--blue-light);
+  border-radius: 1rem;
+  margin-bottom: 10px;
+}
+
+.input::placeholder {
+  color: var(--gray);
+}
+
+.button {
+  width: 100%;
+  padding: 1rem;
+  background: var(--blue);
+  border-radius: 1rem;
+  color: var(--blue-dark);
+  font-weight: 700;
+}
